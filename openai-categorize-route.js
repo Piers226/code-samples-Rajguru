@@ -1,3 +1,11 @@
+/* The following file demonstrates the implementation of the AI-powered categorization feature
+* The user can use this feature to easily categorize transactions before adding them to their budget.
+* It uses gpt-4o-mini and Zod to get a structured response from OpenAI, in a format that can be
+* easily uploaded to the PendingTransaction collection in MongoDB.
+* 
+* Steps: prepare transaction data, send to OpenAI, parse response, update DB in bulk
+*/
+
 import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
@@ -5,7 +13,6 @@ import connectToDatabase from "@/lib/mongodb";
 import BudgetCategory from "@/models/BudgetCategory";
 import PendingTransaction from "@/models/PendingTransaction";
 import OpenAI from "openai";
-
 import { z } from "zod";
 import { zodTextFormat } from "openai/helpers/zod";
 
