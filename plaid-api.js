@@ -1,3 +1,11 @@
+/* This file implements the backend route for the Plaid integration, 
+* which allows users to link their bank accounts and sync transactions. 
+* It handles the following actions:
+* 1) create_link_token: Generates a link token for the frontend to initialize Plaid Link.
+* 2) exchange_public_token: Exchanges the public token received from Plaid Link for an access token, which is stored in the database. Also performs an initial sync of transactions.
+* 3) sync_transactions: Syncs transactions using Plaid's transactions/sync endpoint, processing added, modified, and removed transactions accordingly.
+*/
+
 import { NextResponse } from "next/server";
 import getPlaidClient from "@/lib/plaidClient";
 import connectToDatabase from "@/lib/mongodb";
