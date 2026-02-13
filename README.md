@@ -5,6 +5,10 @@ Stack:
 Frontend --> React(Javascript)
 Backend --> MongoDB, NextJS, server-side session handling with NextAuth
 
+Files: 
+- plaid-api-route.js --> backend for plaid integration
+- openai-api-route.js --> backend for ai-powered categorization feature
+  
 Users can:
 - Connect bank accounts securely via Plaid
 - Define custom budget categories
