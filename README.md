@@ -6,7 +6,7 @@ Frontend --> React(Javascript)
 Backend --> MongoDB, NextJS, server-side session handling with NextAuth
 
 Files: 
-- plaid-api-route.js --> backend for plaid integration
+- plaid-api.js --> backend for plaid integration
 - openai-categorize-route.js --> backend for ai-powered categorization feature
   
 Users can:
