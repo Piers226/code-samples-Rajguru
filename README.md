@@ -6,8 +6,8 @@ Frontend --> React(Javascript)
 Backend --> MongoDB, NextJS, server-side session handling with NextAuth
 
 Users can:
-	•	Connect bank accounts securely via Plaid
-	•	Define custom budget categories
-	•	View synced transactions
-	•	Receive AI-generated category suggestions with confidence scores
-	•	Review and confirm suggested classifications
+- Connect bank accounts securely via Plaid
+- Define custom budget categories
+- View synced transactions
+- Receive AI-generated category suggestions with confidence scores
+- Review and confirm suggested classifications
